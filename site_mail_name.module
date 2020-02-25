@@ -1,0 +1,23 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Site Mail Name module hook implementations.
+ */
+
+
+/**
+ * Implements hook_mail_alter().
+ */
+function site_mail_name_mail_alter (array &$message)
+{
+  $config = Drupal::config('system.site');
+  $site_mail = $config->get('mail');
+
+  if ($message['from'] === $site_mail) {
+    $site_name = addslashes($config->get('name'));
+    $message['from'] = sprintf('"%s" <%s>', $site_name, $site_mail);
+  }
+}

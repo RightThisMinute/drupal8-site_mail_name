@@ -1,0 +1,17 @@
+{
+  "name": "drupal/site_mail_name",
+  "description":
+    "Sets the name portion of the from address for emails sent by Drupal.",
+  "type": "drupal-module",
+  "authors": [
+    {
+      "name": "Donovan Mueller",
+      "role": "Author & maintainer"
+    }
+  ],
+  "license": "MIT",
+  "replace": {},
+  "repositories": [],
+  "require": {},
+  "prefer-stable": true
+}

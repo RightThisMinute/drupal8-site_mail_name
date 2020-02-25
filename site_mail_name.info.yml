@@ -1,0 +1,6 @@
+name: Site Mail Name
+description: Sets the name portion of the from address for emails sent by Drupal.
+package: Custom
+
+type: module
+core: 8.x
